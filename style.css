@@ -80,4 +80,47 @@ a {
   padding-right: 12px;
   margin-right: 10px;
 }
+.toggle-button {
+  font-size: 21px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  display: none;
+}
+.toggle-button:focus {
+  outline: none;
+}
+
 /* ------.Nav Menu------- */
+
+/* media Query */
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media (max-width: 574px) {
+  .toggle-button {
+    display: initial;
+  }
+
+  .collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease-in;
+  }
+  .collapse .nav-link {
+    display: block;
+    text-align: center;
+  }
+  .search-box {
+    border-right: none;
+  }
+
+  .collapse-list {
+    max-height: 500px;
+  }
+}
