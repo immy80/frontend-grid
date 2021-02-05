@@ -5,3 +5,11 @@ let collapse = document.querySelectorAll("#header .collapse");
 toggle.addEventListener('click', function(){
     collapse.forEach(col =>col.classList.toggle("collapse-list"))
 })
+
+
+// masonry
+
+new Masonry('#post .grid',{
+    itemSelector: '.grid-item',
+    gutter: 20
+})
